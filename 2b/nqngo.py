@@ -1,6 +1,9 @@
-# Read input from STDIN
-import sys
+# API-compatible input() function
+def input():
+    import sys
 
-INPUT= "".join(line for line in sys.stdin)
+    return  "".join(line for line in sys.stdin)
 
-print(INPUT.rstrip("\n"))
+STDIN=input()
+
+print(STDIN)
